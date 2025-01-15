@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <style>
+      html{
+        overflow-x: hidden;
+        overflow-y: auto;
+
+      }
+        body {
+        
+          overflow-x:hidden;
+
+        }
+        .hidden {
+          display: none;
+        }
+      .headers{
+        width: 100%;
+        height: 60px;
+        box-shadow: 0px 0px 8px gray;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10px;
+        position: sticky;
+         top:0px;
+         z-index: 2000;
+         background-color: white;
+            
+        
+      }
+      .headers a{
+        position: absolute;
+        top: 2px;
+        right:30px;
+        color: rgb(0, 136, 255);
+        cursor: pointer;
+      }
+      .headers a:hover{
+        color: white;
+        background-color:red;
+        border-radius: 10px;
+        padding-left:10px;
+        width: 100px;
+        right: 10px;
+
+      }
+
+      .main1{
+        width: 90%;
+        height: 70vh;
+        
+      }
+      .main1 img{
+        width: 130%;
+        height:120%;
+        object-fit: cover;
+        padding: 5%;
+        margin-top: 100px;
+      margin-left: -70px;
+        cursor: pointer;        
+        
+      }
+
+     .btn-back{
+        font-size:1.5rem;
+        padding: 0.5rem 1.5rem;
+        color:white;
+        background-color:  cadetblue;
+    position: absolute;
+    top: 80px;
+    left: 25px;
+    border-radius: 3px;
+    cursor: pointer;
+     }
+.btn-back:hover{
+    background-color: palevioletred;
+}
+
+
+.h1{
+        position: relative;
+        top: 120px;
+        left: 30%;
+        
+      }
+      .head {
+        font-size: 40px;
+      
+      }
+      .head a{
+        display: inline;
+      }
+
+@media (max-width:650px){
+
+
+    .main1{
+        width: 100%;
+        height: 400px;
+        
+      }
+      .main1 img{
+        width: 120%;
+        height:100%;
+        object-fit: cover;
+        margin-left: -50px;
+        cursor: pointer;      
+        margin-top: 150px;  
+        
+      }
+
+
+      .headers h1{
+        font-size: 25px;
+
+      }
+
+
+      .h1{
+        position: relative;
+        top: 120px;
+        left: 20%;
+        
+      }
+      .head {
+        font-size: 28px;
+      
+      }
+      .head a{
+        display: inline;
+      }
+
+      i{
+        font-size: 26px;
+      }
+
+      .Persons{
+        display: none;
+      }
+}
+
+
+
+      </style>
+</head>
+<body>
+
+    
+
+
+  
+<header class="headers" style="position: sticky; top: 0px;">
+
+    <h1 id="welcomeMessage" style="color: black;">Hello</h1>
+    <i class="ri-user-3-fill Persons"  style="font-size: 40px; color: rgba(43, 104, 226, 0.941); position: relative; right: 110px; top: -5px;"></i>
+    <button id="logoutButton" class="hidden" style="color: white; background-color:  cadetblue; padding: 10px 15px ;">Logout</button>
+
+</header>
+
+
+<div class="back">
+    <button class="btn-back"><a href="./index.html">Back</a></button>
+
+</div>
+
+<div class="h1">
+  <h1 class="head" style="color: black;">Please  <a href="./login.html" style="color: blueviolet;">Create Account</a></h1>
+
+</div>
+<main class="main1">
+    <img src="img/img1.png" alt="">
+</main>
+
+
+
+
+
+<footer class="footer">
+
+  <div class="footer-top" style="background-image: url('./assets/images/footer-illustration.png')">
+    <div class="container">
+
+      <div class="footer-brand">
+
+        <a href="" class="logo">Foodie<span class="span">.</span></a>
+
+        <p class="footer-text">
+          Financial experts support or help you to to find out which way you can raise your funds more.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Contact Info</p>
+        </li>
+
+        <li>
+          <p class="footer-list-item">+1 (062) 109-9222</p>
+        </li>
+
+        <li>
+          <p class="footer-list-item">Info@YourGmail24.com</p>
+        </li>
+
+        <li>
+          <address class="footer-list-item">153 Williamson Plaza, Maggieberg, MT 09514</address>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Opening Hours</p>
+        </li>
+
+        <li>
+          <p class="footer-list-item">Monday-Friday: 08:00-22:00</p>
+        </li>
+
+        <li>
+          <p class="footer-list-item">Tuesday 4PM: Till Mid Night</p>
+        </li>
+
+        <li>
+          <p class="footer-list-item">Saturday: 10:00-16:00</p>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p class="copyright-text">
+        &copy; 2022 <a href="#" class="copyright-link">codewithAnkit</a> All Rights Reserved.
+      </p>
+    </div>
+  </div>
+
+</footer>
+
+
+    
+
+    <script>
+      const user = localStorage.getItem("user");
+      const main1=document.querySelector(".main1");
+
+      main1.addEventListener("click",()=>{
+        window.location.href = "login.html";
+        
+      })
+      if (user) {
+        const parsedUser = JSON.parse(user);
+        document.getElementById(
+          "welcomeMessage"
+        ).innerHTML = `Hello ${parsedUser.name}`;
+        document.getElementById("logoutButton").classList.remove("hidden");
+      } else {
+        document.getElementById(
+          "welcomeMessage"
+        ).innerHTML = `Hello, please <a href='login.html'>login</a>`;
+      }
+
+      document
+        .getElementById("logoutButton")
+        .addEventListener("click", function () {
+          localStorage.removeItem("user");
+          window.location.href = "login.html";
+          alert("Successfull logout");
+        });
+    </script>
+
+</body>
+</html>
